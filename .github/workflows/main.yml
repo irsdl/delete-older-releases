@@ -29,6 +29,7 @@ jobs:
         echo "Build completed"
 
   release:
+    permissions: write-all
     needs: build
     runs-on: ubuntu-latest
     steps:
